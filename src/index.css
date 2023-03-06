@@ -395,9 +395,9 @@ Styles of Pokemon Single Page
 /* Stats */
 .container-stats {
   display: flex;
-  gap: 50px;
-  align-items: center;
-  margin-top: 180px;
+    gap: 50px;
+    margin-top: 180px;
+    padding: 0px 120px 0px 120px;
 }
 
 .stats {
@@ -405,6 +405,11 @@ Styles of Pokemon Single Page
   flex-direction: column;
   gap: 20px;
   flex: 1;
+}
+
+.text-center{
+  text-align: center;
+
 }
 
 .stat-group {
@@ -467,4 +472,8 @@ Styles of Pokemon Single Page
 .btn-load-more:hover {
   background-color: var(--color-primary-hover);
   color: #000;
+}
+
+.ability-flex{
+  
 }

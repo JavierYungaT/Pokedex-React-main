@@ -71,18 +71,10 @@ export const PokemonPage = () => {
             </div>
           </div>
 
-          <div>
-            <h1>Habilidades</h1>
-            <ul>
-              {abilities.map((ability) => (
-                <li key={ability.name}>{ability.name}</li>
-              ))}
-            </ul>
-          </div>
-
           <div className="container-stats">
-            <h1>Estadísticas</h1>
+            
             <div className="stats">
+            <h1 className="text-center" >Estadísticas</h1>
               <div className="stat-group">
                 <span>Hp</span>
                 <div className="progress-bar"></div>
@@ -125,6 +117,14 @@ export const PokemonPage = () => {
                   {pokemon.stats[5].base_stat}
                 </span>
               </div>
+            </div>
+            <div className=" ability-flex">
+              <h1>Habilidades</h1>
+              <ul>
+                {abilities.map((ability) => (
+                  <li key={ability.name}>{ability.name}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </>
